@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>--Caesar Cipher--</title>
+    <style>
+    body {
+      text-align: center;
+      padding-top: 125px;
+      background-image: url("bg.png");
+    }
+    input[type=text] {
+      padding-top: .25em;
+      padding-bottom: .25em;
+      background: #a6a6a6;
+      font-size: 32px;
+      font-family: Times;
+      width: 500px;
+      height: 1.75em;
+      text-align: center;
+      border: 0px;
+      border-radius: 5px;
+      resize: none;
+    }
+    input[type=number] {
+      background: #cccccc;
+      font-family: Times;
+      font-size: 24px;
+      height: 1.5em;
+      width: 2.25em;
+      border: 0px;
+      border-radius: 9px;
+      text-align: center;
+    }
+    input[type=submit] {
+      background: #666666;
+      border: 0px;
+      font-size: 24px;
+      font-family: Times;
+      border-radius: 10px;
+    }
+    div.test{
+      margin: 0 auto;
+      background: #a6a6a6;
+      font-size: 32px;
+      font-family: Times;
+      width: 500px;
+      height: auto;
+      text-align: center;
+      border: 0px;
+      border-radius: 5px;
+    }
+    
+    </style>
+  </head>
+  <body>
+  <h2>Caesar Cipher</h3>
+  <p>
+  <form>
+    <input type="text" placeholder="Enter Your Text" name="string" />
+    <br/>
+    <br/>
+    <input type="number" name="offset" value="1" min="-25" max="25" />
+    <br/>
+    <br/>
+    <input type="submit" value="ENCODE" />
+  </form>
+  <br/>
+  <div class="test">
+  <%= cipher %>
+  </div>
+  </p>
+  </body>
+</html>
